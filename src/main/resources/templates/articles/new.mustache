@@ -1,0 +1,16 @@
+
+{{>layouts/header}}
+<form action="/articles/create" method="post">
+  <div class="mb-3">
+  <label for="text" class="form-label">제목</label>
+  <input type="text" class="form-control" id="text" placeholder="제목" name="title">
+</div>
+<div class="mb-3">
+  <label for="content" class="form-label">내용</label>
+  <textarea class="form-control" id="content" rows="3" name="content"></textarea>
+</div>
+<div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+</form>
+{{>layouts/footer}}
